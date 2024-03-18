@@ -1,0 +1,6 @@
+.productWrapper {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 20px;
+}

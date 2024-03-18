@@ -1,0 +1,27 @@
+.product {
+    padding:10px;
+    border: 1px solid #7a7a7a;
+    border-radius: 5px;
+    background-color: #222;
+    transition: box-shadow 0.2s;
+}
+.product:hover{
+    box-shadow: 0 0 10px #ffffff5d;
+}
+
+.product .productImg img{
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.product .productBodyDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.product .productBodyDetails button {
+    margin-top: 15px;
+}

@@ -1,0 +1,7 @@
+.navbar {
+    display: flex;
+    justify-content: right;
+    border-bottom:1px solid #fafafa;
+    padding-bottom: 7px;
+    min-width: 250px;
+}
