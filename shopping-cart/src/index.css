@@ -33,10 +33,5 @@ img {
 
 .btn:hover {
     background-color: #fafafa;
-    border: 1px solid #fafafa;
-    outline: none;
-    padding: 5px 10px;
-    border-radius: 4px;
     color: #111;
-    cursor: pointer;
 }

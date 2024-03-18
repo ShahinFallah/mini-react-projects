@@ -1,7 +1,57 @@
 .navbar {
     display: flex;
     justify-content: right;
-    border-bottom:1px solid #fafafa;
+    border-bottom: 1px solid #fafafa;
     padding-bottom: 7px;
     min-width: 250px;
+}
+
+.navbar i {
+    margin: 0 4px;
+}
+
+.cart {
+    position: fixed;
+    width: 350px;
+    height: 100vh;
+    right: -350px;
+    top: 0;
+    background-color: #1b1a1a;
+    z-index: 999;
+    transition: 0.2s;
+    padding: 5px 10px;
+    overflow-x: auto;
+    scrollbar-width: thin;
+}
+
+.cartHeader {
+    border-bottom: 1px solid #bbb;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-bottom: 6px;
+}
+
+.cartHeader>i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.9rem;
+}
+
+.cartHeader i {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.emptyCart {
+    text-align: center;
+    opacity: 0.5545;
+}
+
+.emptyCart h3 {
+    margin: 20px 0 15px;
+}
+
+.emptyCart i {
+    font-size: 1.5rem;
 }

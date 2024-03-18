@@ -1,0 +1,28 @@
+.cartProduct {
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartProduct:last-of-type{
+    margin-bottom:5px;
+}
+
+.cartProductDetails span {
+    display: block;
+    margin-top:7px;
+}
+
+.removeBtn {
+    padding: 2px 8px;
+    margin-top: 18px;
+}
+
+.cartProductImg img {
+    width: 110px;
+    height: 110px; 
+    border-radius: 10px;  
+}
