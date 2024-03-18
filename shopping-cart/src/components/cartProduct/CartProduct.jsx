@@ -12,7 +12,7 @@ export default function CartProduct({id, quantity}) {
     return (
         <div className={style.cartProduct}>
             <div className={style.cartProductDetails}>
-                <p>Name</p>
+                <p>{productData.name}</p>
                 <span><b>quantity: </b>{quantity}</span>
                 <span><b>price: </b>${productData.price * quantity}</span>
                 <button onClick={() => cart.deleteFromCart(id)} className={`btn ${style.removeBtn}`}>remove</button>
