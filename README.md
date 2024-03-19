@@ -1,7 +1,6 @@
-<div>
+
 <h1 style = "color:#12dcfa;display:inline;border:none">React-Projects</h1>
 <img src='https://uploadkon.ir/uploads/5e2619_24react-2.svg' width = "26px" height = '26px' style = "margin-left:10px">
-</div>
 
 ---
 
