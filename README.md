@@ -14,7 +14,7 @@
 
 <br>
 
-# Local Installation (skip if you are working on codespaces or gitpod)
+# Local Installation
 
 #### Download the projects using git
 
@@ -32,8 +32,9 @@ $ cd {Project folder name}
 
 - useState<br>
 - useContext<br>
+- useReducer<br>
 - props<br>
-- router<bt>
+- router<br>
 - and more . . .
 
 ## package & library installed
