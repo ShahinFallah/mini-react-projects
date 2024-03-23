@@ -62,7 +62,7 @@ export default function App() {
         if (state.currentOperand.length === 1) {
           return {
             ...state,
-            currentOperand:null
+            currentOperand: null
           }
         }
 
@@ -110,11 +110,11 @@ export default function App() {
   }
 
   const INTEGER_FORMATTER = new Intl.NumberFormat("en-us", {
-    maximumFractionDigits:0
+    maximumFractionDigits: 0
   })
 
-  function formatOperand (operand) {
-    if (operand == null) return 
+  function formatOperand(operand) {
+    if (operand == null) return
 
     const [integer, decimal] = operand.split('.')
     if (decimal == null) return INTEGER_FORMATTER.format(integer)
@@ -123,7 +123,7 @@ export default function App() {
 
   }
 
-  const [{ currentOperand, prevOperand, operation }, dispatch] = useReducer(reducer, {})
+  const [{ currentOperand, prevOperand, operation }, dispatch] = useReducer(reducer, { currentOperand: '0' })
 
   return (
     <div className="calculator-grid">
