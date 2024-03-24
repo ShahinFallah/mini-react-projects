@@ -12,6 +12,8 @@
 #### 1. [Shopping-cart](https://github.com/ShahinFallah/react-projects/tree/main/shopping-cart) - This is a shopping cart project. You can add products to your shopping cart
 #### 2. [calculator](https://github.com/ShahinFallah/react-projects/tree/main/calculator) - This is a simple calculator project built with react
 
+#### 3. [todo-list](#) - Coming soon
+
 <br>
 
 # Local Installation
