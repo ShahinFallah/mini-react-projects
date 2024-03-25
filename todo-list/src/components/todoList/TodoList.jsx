@@ -4,7 +4,10 @@ import TodoForm from '../todoForm/TodoForm'
 import Todo from '../todo/Todo'
 
 export default function TodoList() {
-    const [todos, setTodos] = useState([])
+
+    const [todos, setTodos] = useState(localStorage.getItem('todos') ? JSON.parse(localStorage.getItem('todos')) : [])
+
+    localStorage.setItem('todos', JSON.stringify(todos))
     
     const addTodo = (todo) => {
         if (!todo.text || /^\s*$/.test(todo.text)) return;
@@ -42,7 +45,7 @@ export default function TodoList() {
             <TodoForm onSubmit={addTodo} />
             <div className={style.todoContainer}>
                 <Todo
-                    todos={todos}
+                    todos={JSON.parse(localStorage.getItem('todos'))}
                     completeTodo={completeTodo}
                     removeTodo={removeTodo}
                     updateTodo={updateTodo} />
