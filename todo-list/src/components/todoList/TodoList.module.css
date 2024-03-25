@@ -1,0 +1,27 @@
+.todoApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #161a2b;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
+}
+
+.todoApp>h1 {
+    margin: 32px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.todoContainer {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
