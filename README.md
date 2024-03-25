@@ -35,6 +35,8 @@ $ cd {Project folder name}
 - useState<br>
 - useContext<br>
 - useReducer<br>
+- useEffect<br>
+- useRef<br>
 - props<br>
 - router<br>
 - and more . . .
@@ -42,12 +44,13 @@ $ cd {Project folder name}
 ## package & library installed
 
 > 1. react-router-dom
+> 1. react-icons
 
-## more
+<h2 style="font-size:30px;font-weight: bold;">more</h2> 
 
-Here I upload my mini react projects<br>
-If you want to see bigger projects, check other repositories<br>
-I hope you like it
+### I got the idea of ​​some of the above projects from YouTube and am <b style="color:#00ff04a3">practicing</b> with these projects<br>
+### If you want to see bigger projects, check other repositories<br>
+### I hope you like it
 
-<i style = "color:#888">Shahin</i>
+<i style = "color:#888">Shahin ~~</i>
 
