@@ -9,6 +9,7 @@
     margin: 128px auto;
     border-radius: 10px;
     padding-bottom: 32px;
+    position: relative;
 }
 
 .todoApp>h1 {
@@ -24,4 +25,52 @@
     justify-content: flex-start;
     overflow-y: scroll;
     scrollbar-width: thin;
+}
+
+.menuIcon {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    color: #fff;
+    font-size: 27px;
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    width: 120px;
+    height: 150px;
+    background: #161a2b;
+    top: 5px;
+    left: -122px;
+    border-radius: 10px;
+    transition: .2s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.showMenu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu ul {
+    list-style-type: none;
+    color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+.menu ul li{
+    padding: 6px 6px;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: .2s;
+    cursor: pointer;
+}
+.menu ul li:hover{
+   background-color: #22283f;
+}
+
+.disable {
+    pointer-events: none;
+    opacity: .55;
 }
