@@ -4,7 +4,7 @@
     justify-content: start;
     width: 520px;
     min-height: 600px;
-    background: #161a2b;
+    background: #334155;
     text-align: center;
     margin: 128px auto;
     border-radius: 10px;
@@ -14,7 +14,7 @@
 
 .todoApp>h1 {
     margin: 32px 0;
-    color: #fff;
+    color: inherit;
     font-size: 24px;
 }
 
@@ -23,14 +23,14 @@
     flex-direction: column;
     height: 400px;
     justify-content: flex-start;
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: thin;
 }
 
 .menuIcon {
     position: absolute;
-    left: 5px;
-    top: 5px;
+    left: 10px;
+    top: 10px;
     color: #fff;
     font-size: 27px;
     cursor: pointer;
@@ -38,8 +38,7 @@
 .menu {
     position: absolute;
     width: 120px;
-    height: 150px;
-    background: #161a2b;
+    background: #334155;
     top: 5px;
     left: -122px;
     border-radius: 10px;
@@ -67,7 +66,7 @@
     cursor: pointer;
 }
 .menu ul li:hover{
-   background-color: #22283f;
+   background-color: #374f70;
 }
 
 .disable {
