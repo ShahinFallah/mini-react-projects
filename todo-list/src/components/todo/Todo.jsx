@@ -5,17 +5,17 @@ import { RiCloseCircleLine } from 'react-icons/ri'
 import { TiEdit } from 'react-icons/ti'
 import { FaRegSquare } from "react-icons/fa6";
 import { FaRegSquareCheck } from "react-icons/fa6";
-import { selectState } from '../../App'
+import { TaskManagerContext } from '../context/todoContext'
 
-export default function todo(props) {
-    const { todoSelectState } = useContext(selectState)
+export default function todo() {
+    const ctxt = useContext(TaskManagerContext)
     const [edit, setEdit] = useState({
         id: null,
         value: ''
     })
 
     const submitUpdate = value => {
-        props.updateTodo(edit.id, value)
+        ctxt.updateTodo(edit.id, value)
         setEdit({
             id: null,
             value: ''
@@ -24,16 +24,16 @@ export default function todo(props) {
 
 
     if (edit.id) {
-        return <TodoForm onSubmit={submitUpdate} edit={edit} setTodos={props.setTodos} />
+        return <TodoForm onSubmit={submitUpdate} edit={edit} setTodos={ctxt.setTodos} />
     };
 
     return (
-        props.todos.map((todo, index) => (
-            todoSelectState ? (
+        ctxt.todos.map((todo, index) => (
+            ctxt.todoSelectState ? (
 
                 // Select State
                 <div
-                    onClick={() => { props.handleSelectTodos(todo.id) }}
+                    onClick={() => { ctxt.handleSelectTodos(todo.id) }}
                     style={todo.isSelected ? { opacity: '1' } : { opacity: '.50' }}
                     className={`${style.todoRow} ${style.todoRowSelect}`} key={index}>
                     {todo.isSelected ?
@@ -49,12 +49,12 @@ export default function todo(props) {
                 // No Select State
                 (
                     <div className={todo.isComplete ? `${style.todoRow} ${style.complete}` : `${style.todoRow}`} key={index}>
-                        <div className={style.todoTxt} onClick={() => { props.completeTodo(todo.id) }} key={todo.id}>
+                        <div className={style.todoTxt} onClick={() => { ctxt.completeTodo(todo.id) }} key={todo.id}>
                             {todo.text}
                         </div>
                         <div className={style.icons}>
                             <RiCloseCircleLine
-                                onClick={() => props.removeTodo(todo.id)}
+                                onClick={() => ctxt.removeTodo(todo.id)}
                                 className={style.deleteIcon} />
                             <TiEdit onClick={() => setEdit({ id: todo.id, value: todo.text })}
                                 className={style.editIcon} />
